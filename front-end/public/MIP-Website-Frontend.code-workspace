@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "MIP-Website-Frontend",
+			"path": ".."
+		},
+		{
+			"name": "src",
+			"path": "../../src"
+		}
+	],
+	"settings": {}
+}

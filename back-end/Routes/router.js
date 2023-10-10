@@ -28,7 +28,7 @@ router.post("/register", async (req, res) => {
                 userId: user._id,
                 token: crypto.randomBytes(32).toString("hex"),
             }).save();
-            const url = `http://localhost:3000/users/${user._id}/verify/${token.token}`;
+            const url = `${process.env.BASE_URL_FRONTEND}/CAP/users/${user._id}/verify/${token.token}`;
             await sendEmail(Email, "Verify Email", url);
     
             res
@@ -79,13 +79,14 @@ router.post("/signin", async (req, res) => {
 					userId: user._id,
 					token: crypto.randomBytes(32).toString("hex"),
 				}).save();
-				const url = `http://localhost:3000/users/${user._id}/verify/${token.token}`;
+				const url = `${process.env.BASE_URL_FRONTEND}/CAP/users/${user._id}/verify/${token.token}`;
 				await sendEmail(user.email, "Verify Email", url);
-			}
-	
-			return res
+				return res
 				.status(400)
 				.send({ message: "An Email sent to your account please verify" });
+			}
+	
+			
 		}
 		const token = user.generateAuthToken();
 		res.status(200).send({data: token, message: "Logged in successfully" });
@@ -118,7 +119,7 @@ router.post("/password-reset", async (req, res) => {
 			}).save();
 		}
 
-		const url = `http://localhost:3000/password-reset/${user._id}/${token.token}/`;
+		const url = `${process.env.BASE_URL_FRONTEND}/CAP/password-reset/${user._id}/${token.token}/`;
 		await sendEmail(user.Email, "Password Reset", url);
 
 		res

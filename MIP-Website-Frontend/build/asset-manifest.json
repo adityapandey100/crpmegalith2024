@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ba60972b.css",
+    "main.js": "/static/js/main.19a7ca11.js",
+    "static/media/pexels-dan-assis-5673238.mp4": "/static/media/pexels-dan-assis-5673238.3856753454b68a3da64a.mp4",
+    "static/media/dogukan.jpg": "/static/media/dogukan.c9b69415e97cd1dec2fa.jpg",
+    "static/media/1.jpg": "/static/media/1.56033b6d4560e905360f.jpg",
+    "static/media/imagee.jpg": "/static/media/imagee.b56acf9871239a5497af.jpg",
+    "static/media/norway.jpg": "/static/media/norway.ab2b80c6285e0cda76d2.jpg",
+    "static/media/download.png": "/static/media/download.56a9758afb3766532a35.png",
+    "static/media/log.svg": "/static/media/log.cd046e1a495c96cce5951c2e227306cf.svg",
+    "static/media/register.svg": "/static/media/register.270edb260578be66d92f3ad0f04b50ab.svg",
+    "static/media/megalogotheme.png": "/static/media/megalogotheme.4aa00a0e09d1dd7098e5.png",
+    "index.html": "/index.html",
+    "main.ba60972b.css.map": "/static/css/main.ba60972b.css.map",
+    "main.19a7ca11.js.map": "/static/js/main.19a7ca11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba60972b.css",
+    "static/js/main.19a7ca11.js"
+  ]
+}
